@@ -1,0 +1,17 @@
+{
+  "name": "movie-review-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-cdk": "^2.1003.0",
+    "aws-cdk-lib": "^2.182.0",
+    "constructs": "^10.4.2"
+  }
+}
