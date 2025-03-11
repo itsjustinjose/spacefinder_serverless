@@ -5,9 +5,11 @@ import { apiStack } from "./stacks/apiStack";
 
 
 const app = new App();
-new dataStack(app, 'dataStack');
-const lambdaStackInstance  = new lambdaStack(app, 'lambdaStack');
+const DataStack = new dataStack(app, 'dataStack');
+const LambdaStack  = new lambdaStack(app, 'lambdaStack',{
+    spacesTable: DataStack.spacesTable
+});
 new apiStack(app,'apiStack', {
-    helloLambdaIntegration: lambdaStackInstance.helloLambdaIntegration
+    helloLambdaIntegration: LambdaStack.helloLambdaIntegration
 })
 
