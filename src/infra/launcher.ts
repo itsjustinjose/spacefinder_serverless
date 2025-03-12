@@ -10,6 +10,6 @@ const LambdaStack  = new lambdaStack(app, 'lambdaStack',{
     spacesTable: DataStack.spacesTable
 });
 new apiStack(app,'apiStack', {
-    helloLambdaIntegration: LambdaStack.helloLambdaIntegration
+   spacesLambdaIntegration: LambdaStack.spacesLambdaIntegration
 })
 
